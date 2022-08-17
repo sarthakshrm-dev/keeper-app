@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    background-color: #F4B322;
+    color: white;
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(1, 1, 1 ,0.2);
+    font-family : "McLaren", cursive;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+header h1 {
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    position: relative;
+    margin-right: auto;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+header img:hover {
+
+    cursor: pointer;
+    background-color: #c5901d;
+}
+
+.placeholder {
+    color: #969696;
+    text-align: center;
+}
+
+.addbtn {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #F4B322;
+    border-radius: 50%;
+    font-size:75px;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 6px rgba(1, 1, 1 ,0.2);
+    z-index: -1;
+    transition: 400ms;
+}
+
+.addbtn:hover {
+    cursor: pointer;
+    background-color: #f3d595;
+    transform: scale(1.06);
+    color: rgb(126, 126, 126);
+}
+
+.add {
+    border-radius: 20px;
+    margin: auto;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+}
+
+.form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputtitle {
+    width: 100%;
+    height: auto;
+    margin: 15px;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inputtext {
+    width: 100%;
+    height: 190px;
+    margin: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    resize: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inputtext::-webkit-scrollbar {
+    margin-left: 10px;
+    width: 5px;
+}
+
+.inputtext::-webkit-scrollbar-thumb {
+    background-color: #F4B322;
+    border-radius: 4px;
+}
+
+.inputtext::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.inputhead {
+    background-color: #F4B322;
+    height: 50px;
+    width: 700px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    margin-bottom: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 400ms;
+    z-index: 2;
+}
+
+.inputhead:hover {
+    cursor: pointer;
+    background-color: #f3d595;
+    color: rgb(126, 126, 126);
+}
+
+.note {
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    width: 250px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    transition: 0.2s;
+    border: 0.2px solid rgba(196, 196, 196, 0.7);
+}
+
+.note h2 {
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+.note button {
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.note:hover {
+    box-shadow: 2px 2px 6px rgba(1, 1, 1 ,0.2);
+    border: 1px solid rgba(196, 196, 196, 1);
+}
+
+.shownote {
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    word-wrap: break-word;
+    z-index: 2;
+}
+
+.shownote h1 {
+    margin-bottom: 20px;
+}
+
+.shownotecont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.dialogcont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deletedialog {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    z-index: 2;
+}
+
+.deletedialog h2 {
+    margin: 5px;
+}
+
+.deletedialog p {
+    margin: 5px;
+}
+
+.deletedialog div {
+    position: relative;
+    margin-top: auto;
+}
+
+.dialogdel {
+    height: 40px;
+    background-color: #F4B322;
+    color: white;
+    border: none;
+    border-bottom-left-radius: 20px;
+    transition: 400ms;
+    width: 225px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dialogclose {
+    height: 40px;
+    background-color: #F4B322;
+    color: white;
+    border: none;
+    border-bottom-right-radius: 20px;
+    transition: 400ms;
+    width: 225px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dialogdel:hover {
+    cursor: pointer;
+    background-color: #f3d595;
+    color: rgb(126, 126, 126);
+}
+
+.dialogclose:hover {
+    cursor: pointer;
+    background-color: #f3d595;
+    color: rgb(126, 126, 126);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    color: #969696;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 10px;
+    z-index: -1;
+}
